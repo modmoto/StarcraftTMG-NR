@@ -466,6 +466,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="-1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a9-c178-a6ce-97cf"/>
@@ -1015,30 +1018,6 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Academy" hidden="false" id="9074-b072-2c11-ab2c">
-      <costs>
-        <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
-        <cost name="Gas" typeId="1719-6214-392e-e53f" value="35"/>
-        <cost name="Core" typeId="472f-46af-8e02-bfbf" value="0"/>
-        <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
-        <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="2"/>
-        <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
-      </costs>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40e5-a0d0-785c-99c8"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="45a9-5def-355b-0560" id="c277-5f38-f2ff-9615" primary="true" name="Tactical"/>
-      </categoryLinks>
-      <profiles>
-        <profile name="Advanced Training" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8866-2868-a335-d6ea">
-          <characteristics>
-            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, when a Friendly Support Unit activates a Special Ability that costs CP, resolve that ability with its CP cost reduced by 1 (to a minimum of 0). Do not Exhaust this card.</characteristic>
-            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armory" hidden="false" id="db3d-2866-94ce-6ed4">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
@@ -1047,6 +1026,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="45a9-5def-355b-0560" id="4b93-5a55-79dd-54ea" primary="true" name="Tactical"/>
@@ -1081,6 +1063,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Go! Go! Go!" id="f69a-a0ec-4565-d2cd" hidden="false" type="profile" targetId="1721-d5ac-ed20-9063"/>
@@ -1097,6 +1082,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="2"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Go! Go! Go!" id="1637-0b2b-044e-5c12" hidden="false" type="profile" targetId="1721-d5ac-ed20-9063"/>
@@ -1124,6 +1112,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="2"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Go! Go! Go!" id="785a-3dcb-13bb-4b78" hidden="false" type="profile" targetId="1721-d5ac-ed20-9063"/>
@@ -1151,6 +1142,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71c0-6a15-ba97-86bb"/>
@@ -1178,6 +1172,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="45a9-5def-355b-0560" id="4249-a568-3d9d-3aac" primary="true" name="Tactical"/>
@@ -1209,6 +1206,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="45a9-5def-355b-0560" id="92ad-96bb-b163-f748" primary="true" name="Tactical"/>
@@ -1239,6 +1239,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="ComSat Station" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="5845-e43b-3538-295b">
@@ -1260,11 +1263,15 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Supply Depot" hidden="false" id="b641-28be-cb85-2b41">
       <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="40"/>
         <cost name="Core" typeId="472f-46af-8e02-bfbf" value="1"/>
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="45a9-5def-355b-0560" id="4013-3f1f-7a73-9034" primary="true" name="Tactical"/>
@@ -1289,6 +1296,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Tactical Retreat" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="1455-1123-d8cd-72b7">
@@ -1316,6 +1326,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Ready for Pickup?" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="c737-b9b8-59f4-4222">
@@ -1335,6 +1348,33 @@
       </profiles>
       <categoryLinks>
         <categoryLink targetId="e4d8-c158-a9fd-08ba" id="a350-9bdd-9e8a-71e0" primary="true" name="Faction"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Academy" hidden="false" id="1cb9-ce35-f15f-fe9b">
+      <profiles>
+        <profile name="Advanced Training" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="8866-2868-a335-d6ea">
+          <characteristics>
+            <characteristic name="Effect" typeId="616e-c7be-abff-a2bf">Once per Round, when a Friendly Support Unit activates a Special Ability that costs CP, resolve that ability with its CP cost reduced by 1 (to a minimum of 0). Do not Exhaust this card.</characteristic>
+            <characteristic name="Cost" typeId="1696-5ea7-559b-bb8b">Reaction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40e5-a0d0-785c-99c8"/>
+      </constraints>
+      <costs>
+        <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="0"/>
+        <cost name="  Gas" typeId="1719-6214-392e-e53f" value="35"/>
+        <cost name="   Core" typeId="472f-46af-8e02-bfbf" value="0"/>
+        <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
+        <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="2"/>
+        <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="CP" typeId="d9d3-e904-3bc1-58f4" value="1"/>
+        <cost name="BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="EP" typeId="2498-bcf5-4ce6-ba10" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="45a9-5def-355b-0560" id="b230-2c88-86f8-b55d" primary="true" name="Tactical"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>

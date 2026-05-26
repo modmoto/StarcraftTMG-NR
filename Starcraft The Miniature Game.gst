@@ -31,6 +31,27 @@
         </modifier>
       </modifiers>
     </costType>
+    <costType name="     CP" id="d9d3-e904-3bc1-58f4" defaultCostLimit="0" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Required so it does not show on list creation</comment>
+        </modifier>
+      </modifiers>
+    </costType>
+    <costType name="     BM" id="2b0c-c74f-79d5-5637" defaultCostLimit="0" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Required so it does not show on list creation</comment>
+        </modifier>
+      </modifiers>
+    </costType>
+    <costType name="     EN" id="2498-bcf5-4ce6-ba10" defaultCostLimit="0" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>Required so it does not show on list creation</comment>
+        </modifier>
+      </modifiers>
+    </costType>
   </costTypes>
   <profileTypes>
     <profileType name="Unit" id="18be-d8b9-8024-4925" hidden="false" kind="model" sortIndex="1">

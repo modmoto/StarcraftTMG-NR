@@ -263,6 +263,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Faction" hidden="false" id="3629-70d5-535d-76c6" targetId="7786-b4c1-7de3-915c" primary="true"/>
@@ -293,6 +296,9 @@
         <cost name="Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
         <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Faction" hidden="false" id="9e6c-05fb-9099-790b" targetId="7786-b4c1-7de3-915c" primary="true"/>
@@ -1147,7 +1153,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Creep Removal" id="2be6-651f-0fdc-c716" hidden="false" type="profile" targetId="dc56-7a7c-492a-7eb9"/>
-        <infoLink name="Living Glob TIssue" id="914d-46f7-dcd5-9bd3" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
+        <infoLink name="Living Glob Tissue" id="914d-46f7-dcd5-9bd3" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
       </infoLinks>
       <profiles>
         <profile name="Speed on Creep" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d6ca-4a3a-8eed-8cab">
@@ -1172,7 +1178,7 @@
       </costs>
       <infoLinks>
         <infoLink name="Creep Removal" id="27c8-6614-3e51-f267" hidden="false" type="profile" targetId="dc56-7a7c-492a-7eb9"/>
-        <infoLink name="Living Glob TIssue" id="62ac-4073-93b7-9e5c" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
+        <infoLink name="Living Glob Tissue" id="62ac-4073-93b7-9e5c" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
       </infoLinks>
       <profiles>
         <profile name="Malevolent Matriarch" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="24e6-af43-3ea2-db09">
@@ -1194,6 +1200,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Carapace" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="b060-3eea-8438-aa7d">
@@ -1221,6 +1230,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Lie in Wait" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d57b-5e1f-6d19-5b76">
@@ -1245,6 +1257,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Missile Attacks" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="34bb-a0f5-742f-f49f">
@@ -1263,6 +1278,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6042-132c-4895-cde4" id="ac61-add0-2387-4004" primary="true" name="Tactical"/>
@@ -1290,6 +1308,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="6042-132c-4895-cde4" id="de00-447d-78e4-776d" primary="true" name="Tactical"/>
@@ -1323,6 +1344,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a720-4c52-7da3-170e"/>
@@ -1350,6 +1374,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <profiles>
         <profile name="Nasty Surprise" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="5b6b-c3e2-21e2-99c3">
@@ -1371,6 +1398,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="1"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Feral Rage" id="232b-a53c-131c-88d7" hidden="false" type="profile" targetId="0489-6ed9-bca1-be9c"/>
@@ -1387,6 +1417,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="2"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="0"/>
       </costs>
       <infoLinks>
         <infoLink name="Feral Rage" id="42ee-2b71-3b69-a3d0" hidden="false" type="profile" targetId="0489-6ed9-bca1-be9c"/>

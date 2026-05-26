@@ -141,6 +141,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Mass Recall" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="4799-d1bc-6d70-9f2b">
@@ -169,6 +172,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="2"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Pylon Warp-In" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="d158-0c1b-f5a7-a9c8">
@@ -198,6 +204,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EP" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Ground Armor" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d43b-2b13-5d92-99cd">
@@ -222,6 +231,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="acb5-b55f-9492-5149" id="2f38-b805-74be-3e28" primary="true" name="Tactical"/>
@@ -249,6 +261,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <infoLinks>
         <infoLink name="Quick Strikes" id="6d26-6dce-d326-25f6" hidden="false" type="profile" targetId="7995-a465-9333-17ea"/>
@@ -268,6 +283,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19de-077e-e4ab-8c0c"/>
@@ -295,6 +313,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2520-f1a0-0277-8a44"/>
@@ -322,6 +343,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="acb5-b55f-9492-5149" id="569a-5ec5-bdb9-1f3c" primary="true" name="Tactical"/>
@@ -352,6 +376,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="1"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdcd-371a-75a7-f729"/>
@@ -373,6 +400,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="1"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="1"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="acb5-b55f-9492-5149" id="0bfa-4c90-8dca-0116" primary="true" name="Tactical"/>
@@ -403,6 +433,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="acb5-b55f-9492-5149" id="625c-47d0-a001-6950" primary="true" name="Tactical"/>
@@ -430,6 +463,9 @@
         <cost name="    Elite" typeId="f5f9-3591-0f2d-0a53" value="0"/>
         <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
         <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
+        <cost name="     CP" typeId="d9d3-e904-3bc1-58f4" value="0"/>
+        <cost name="     BM" typeId="2b0c-c74f-79d5-5637" value="0"/>
+        <cost name="     EN" typeId="2498-bcf5-4ce6-ba10" value="1"/>
       </costs>
       <profiles>
         <profile name="Phase" typeId="ec1d-63b8-de26-1894" typeName="Rules (Movement Phase)" hidden="false" id="60ce-bc67-59ed-0c90">
