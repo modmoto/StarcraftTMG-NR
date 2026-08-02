@@ -488,7 +488,7 @@
         <categoryLink targetId="acb5-b55f-9492-5149" id="5d4c-127b-7404-a9e7" primary="true" name="Tactical"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="4 Adept" hidden="false" id="e7ab-733c-ce24-a503">
+    <selectionEntry type="unit" import="true" name="Adepts" hidden="false" id="e7ab-733c-ce24-a503">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -641,8 +641,16 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Adept" hidden="false" id="d658-8578-21d4-c2e6">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="01b3-10a2-edef-ddb9-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="01b3-10a2-edef-ddb9-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Artanis" hidden="false" id="e218-f6b9-e94f-8ae9">
+    <selectionEntry type="model" import="true" name="Artanis" hidden="false" id="e218-f6b9-e94f-8ae9">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -725,7 +733,7 @@
         <infoLink name="Commander" id="0873-337b-b71d-f323" hidden="false" type="profile" targetId="c429-c517-b5d9-8e78"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="3 Praetor Guard" hidden="true" id="84f3-7234-2df2-12d5">
+    <selectionEntry type="unit" import="true" name="Praetor Guards" hidden="true" id="84f3-7234-2df2-12d5">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="280"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -784,6 +792,14 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Praetor Guard" hidden="false" id="ae43-f40a-5851-b14d">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="afc2-7699-f92d-fa49-min" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="afc2-7699-f92d-fa49-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pylon" hidden="true" id="b174-1572-feda-5f15">
       <categoryLinks>
@@ -833,7 +849,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="2 Sentry" hidden="false" id="c2e7-d982-ac07-63c6">
+    <selectionEntry type="unit" import="true" name="Sentries" hidden="false" id="c2e7-d982-ac07-63c6">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="130"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -959,8 +975,16 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Sentry" hidden="false" id="564c-a87b-2c68-fc3c">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0c81-2888-ede7-3c2f-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c81-2888-ede7-3c2f-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="1 Stalker" hidden="false" id="aab3-edc0-70f1-373e">
+    <selectionEntry type="unit" import="true" name="Stalker" hidden="false" id="aab3-edc0-70f1-373e">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="170"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -983,7 +1007,25 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="227c-7271-048c-497a"/>
           </constraints>
           <modifiers>
-            <modifier type="replace" value="2" field="name" arg="1" scope="unit"/>
+            <modifier type="append" value="s" field="name" arg="1" scope="unit" join=""/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stalker" hidden="false" id="f8b4-e37c-19da-a050">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c26-3f1d-ef12-1a3b-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c26-3f1d-ef12-1a3b-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="1c26-3f1d-ef12-1a3b-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="2" field="1c26-3f1d-ef12-1a3b-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e38a-46c4-60de-6eeb" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -1101,7 +1143,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="3 Zealots" hidden="false" id="9414-3605-697b-819a">
+    <selectionEntry type="unit" import="true" name="Zealots" hidden="false" id="9414-3605-697b-819a">
       <categoryLinks>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="87ba-4bb7-6e03-46f4" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="3f60-0985-eb44-caa9" primary="false" name="Ground"/>
@@ -1230,6 +1272,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Zealot" hidden="false" id="c300-a802-ddc1-e1ff">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="808f-ac53-245b-e35a-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="808f-ac53-245b-e35a-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>

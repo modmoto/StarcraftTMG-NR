@@ -147,7 +147,7 @@
     </categoryEntry>
   </categoryEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="3 Corpsers (Roach)" hidden="false" id="444a-8557-cdae-3146">
+    <selectionEntry type="unit" import="true" name="Corpsers (Roach)" hidden="false" id="444a-8557-cdae-3146">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="240"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -254,6 +254,14 @@
         <infoLink name="HEAL (X)" id="e969-e08e-498a-5017" hidden="false" type="rule" targetId="9499-b51b-c280-c0bf"/>
         <infoLink name="Regeneration" id="e016-cc58-dd82-469b" hidden="false" type="profile" targetId="8818-270f-f343-09e9"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Corpser" hidden="false" id="4ac0-37c7-6455-bf2e" sortIndex="-1">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7b69-b961-9656-c967-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7b69-b961-9656-c967-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zerg Swarm" hidden="false" id="e467-3028-f8e6-6980">
       <costs>
@@ -324,7 +332,7 @@
         <infoLink name="ON CREEP" id="31a1-da05-03d7-fdbd" hidden="false" type="rule" targetId="b8db-d01a-89fd-efd3"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="2 Hydralisks" hidden="false" id="f3bd-2be6-81f6-5d38">
+    <selectionEntry type="unit" import="true" name="Hydralisks" hidden="false" id="f3bd-2be6-81f6-5d38">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="140"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -343,12 +351,27 @@
             <cost name="     Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
             <cost name="     Hero" typeId="7e61-585f-b715-85e0" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="replace" value="4" field="name" scope="unit" arg="2" position="1"/>
-          </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e17-36f7-5014-abef"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Hydralisk" hidden="false" id="b1d8-ba24-f0d2-7cf5" sortIndex="-1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="006f-aa2d-39fa-e89d-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="006f-aa2d-39fa-e89d-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="006f-aa2d-39fa-e89d-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1ba8-d448-22ba-8b2f" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="006f-aa2d-39fa-e89d-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="1ba8-d448-22ba-8b2f" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -523,7 +546,7 @@
         <categoryLink targetId="8312-ca6b-fa38-deef" id="cb41-d55a-cdb6-7a70" primary="false" name="Light"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kerrigan" hidden="false" id="6e6b-9f68-d74e-84af">
+    <selectionEntry type="model" import="true" name="Kerrigan" hidden="false" id="6e6b-9f68-d74e-84af">
       <categoryLinks>
         <categoryLink targetId="1ae2-afdf-6b77-0afe" id="8893-ef99-bcc9-b858" primary="true" name="Hero"/>
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="eef9-acdb-42ad-65bd" primary="false" name="Biological"/>
@@ -608,7 +631,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26b3-981e-bcb5-13c9"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="6 Kerrigan Swarm Raptors (Zergling)" hidden="true" id="3247-0166-f0fa-fa45">
+    <selectionEntry type="unit" import="true" name="Kerrigan Swarm Raptors (Zergling)" hidden="true" id="3247-0166-f0fa-fa45">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13fc-089d-f4a1-791b"/>
       </constraints>
@@ -677,8 +700,16 @@
         <infoLink name="Adrenal Overload" id="f3eb-7d53-0fdb-b765" hidden="false" type="profile" targetId="fa36-4feb-4201-a6e0"/>
         <infoLink name="INSTANT" id="9ad5-3cf1-3d0d-9468" hidden="false" type="rule" targetId="a6a8-9065-8680-ddbd"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Kerrigan Swarm Raptor" hidden="false" id="44b1-b629-5710-e0b9">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="c5ab-9c23-8f61-cf16-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c5ab-9c23-8f61-cf16-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Omega Worm" hidden="true" id="46b5-e9a4-d359-5024">
+    <selectionEntry type="model" import="true" name="Omega Worm" hidden="true" id="46b5-e9a4-d359-5024">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e955-f1c0-d6d1-795d"/>
       </constraints>
@@ -732,7 +763,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Queen" hidden="false" id="66ee-87e9-ef79-454c">
+    <selectionEntry type="model" import="true" name="Queen" hidden="false" id="66ee-87e9-ef79-454c">
       <costs>
         <cost name=" Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="  Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -886,7 +917,7 @@
         <infoLink name="DEBUFF [Characteristic] (X)" id="488c-dc8b-c701-ca24" hidden="false" type="rule" targetId="e9c5-7999-24b7-4858"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="12 Raptors (Zergling)" hidden="false" id="9351-5747-40af-3f68">
+    <selectionEntry type="unit" import="true" name="Raptors (Zergling)" hidden="false" id="9351-5747-40af-3f68">
       <categoryLinks>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="d190-202f-dfd2-0e11" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="185b-79e5-712f-04de" primary="false" name="Ground"/>
@@ -932,8 +963,23 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9872-2f6f-f3de-2513"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Raptor" hidden="false" id="a01a-a031-e06b-678b">
+          <constraints>
+            <constraint type="min" value="12" field="selections" scope="parent" shared="true" id="279a-faa6-328a-788d-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="279a-faa6-328a-788d-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
           <modifiers>
-            <modifier type="replace" value="18" field="name" scope="unit" arg="12" position="1"/>
+            <modifier type="set" value="18" field="279a-faa6-328a-788d-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="72fd-e873-2e8d-95f6" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="18" field="279a-faa6-328a-788d-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="72fd-e873-2e8d-95f6" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>
@@ -978,7 +1024,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="3 Roaches" hidden="false" id="4be7-9bbf-963b-0054">
+    <selectionEntry type="unit" import="true" name="Roaches" hidden="false" id="4be7-9bbf-963b-0054">
       <profiles>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="cdbd-7b46-5add-cca1">
           <characteristics>
@@ -1051,8 +1097,16 @@
         <categoryLink targetId="b947-4784-f388-d6a2" id="5230-ecb3-0f3c-38ca" primary="false" name="Ground"/>
         <categoryLink targetId="485c-e8a3-ec4d-88a3" id="1c17-3e5c-7cee-5b05" primary="true" name="Core"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Roach" hidden="false" id="0674-8198-2994-bdeb">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="69bf-1dbe-3641-31d3-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="69bf-1dbe-3641-31d3-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Roachling" hidden="false" id="dab9-dc56-5a49-a23c">
+    <selectionEntry type="model" import="true" name="Roachling" hidden="false" id="dab9-dc56-5a49-a23c">
       <categoryLinks>
         <categoryLink targetId="576e-0d70-bca0-9668" id="d116-a564-26ce-d2aa" primary="true" name="Other"/>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="c0f9-4a10-f524-a3b7" primary="false" name="Light"/>
@@ -1081,7 +1135,7 @@
         <infoLink name="Claws" id="f22b-5230-0475-1128" hidden="false" type="profile" targetId="9991-19ca-327a-9240"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="18 Swarmling" hidden="false" id="74a4-9ff6-ac5b-b654">
+    <selectionEntry type="unit" import="true" name="Swarmlings" hidden="false" id="74a4-9ff6-ac5b-b654">
       <categoryLinks>
         <categoryLink targetId="485c-e8a3-ec4d-88a3" id="1f95-7640-d717-393e" primary="true" name="Core"/>
       </categoryLinks>
@@ -1145,6 +1199,14 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Swarmling" hidden="false" id="d002-8175-db5b-4f8d">
+          <constraints>
+            <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="1934-0a45-d330-9d2d-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="1934-0a45-d330-9d2d-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Accelerating Creep" hidden="false" id="e651-adc1-9df8-271a">
       <categoryLinks>
@@ -1439,7 +1501,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="3 Viles (Roach)" hidden="false" id="48b4-8d0d-768a-1d16">
+    <selectionEntry type="unit" import="true" name="Viles (Roach)" hidden="false" id="48b4-8d0d-768a-1d16">
       <profiles>
         <profile name="Devastating Charge" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="e4e0-0ada-e21b-d435">
           <characteristics>
@@ -1541,8 +1603,16 @@
         <categoryLink targetId="b947-4784-f388-d6a2" id="8816-76c1-a810-0267" primary="false" name="Ground"/>
         <categoryLink targetId="485c-e8a3-ec4d-88a3" id="abae-9063-05e9-8820" primary="true" name="Core"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Vile" hidden="false" id="d433-d72e-dbe2-9733">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a791-366c-a6e3-5688-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a791-366c-a6e3-5688-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="12 Zerglings" hidden="false" id="08dd-ca77-a879-0deb">
+    <selectionEntry type="unit" import="true" name="Zerglings" hidden="false" id="08dd-ca77-a879-0deb">
       <categoryLinks>
         <categoryLink targetId="8312-ca6b-fa38-deef" id="7cef-fe69-0d70-bc8f" primary="false" name="Light"/>
         <categoryLink targetId="b947-4784-f388-d6a2" id="574b-500a-e4f6-c7c4" primary="false" name="Ground"/>
@@ -1588,8 +1658,23 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5676-01a2-2700-f5d1"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zergling" hidden="false" id="deff-a5db-30f1-befb" sortIndex="-1">
+          <constraints>
+            <constraint type="min" value="12" field="selections" scope="parent" shared="true" id="620d-c548-1df2-5e2d-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="620d-c548-1df2-5e2d-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
           <modifiers>
-            <modifier type="replace" value="18" field="name" scope="unit" arg="12" position="1"/>
+            <modifier type="set" value="18" field="620d-c548-1df2-5e2d-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2dc1-d8b7-0ba2-9278" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="18" field="620d-c548-1df2-5e2d-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2dc1-d8b7-0ba2-9278" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
       </selectionEntries>

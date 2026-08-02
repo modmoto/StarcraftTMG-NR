@@ -36,7 +36,7 @@
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry type="unit" import="true" name="6 Marines" hidden="false" id="46b6-0bfa-70ea-ba86">
+    <selectionEntry type="unit" import="true" name="Marines" hidden="false" id="46b6-0bfa-70ea-ba86">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="160"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -77,12 +77,27 @@
             <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
             <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="replace" value="9" field="name" scope="unit" arg="6"/>
-          </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f748-84bf-3aa2-975b"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Marine" hidden="false" id="535b-1f2b-6421-d932">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="1c8b-f6de-f59b-aa24-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1c8b-f6de-f59b-aa24-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="9" field="1c8b-f6de-f59b-aa24-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="1c8b-f6de-f59b-aa24-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -266,7 +281,7 @@
         <categoryLink targetId="8b0f-c3cd-9487-5030" id="7c54-afdd-5a50-0ba8" primary="false" name="Biological"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="2 Marauder" hidden="false" id="1e27-1f32-b4a9-3c44">
+    <selectionEntry type="unit" import="true" name="Marauders" hidden="false" id="1e27-1f32-b4a9-3c44">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="150"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -285,12 +300,27 @@
             <cost name="Support" typeId="31a6-c1f1-3d47-fa76" value="0"/>
             <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
           </costs>
-          <modifiers>
-            <modifier type="replace" value="4" field="name" scope="unit" arg="2" position="1"/>
-          </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8dc-cb49-23f8-636a"/>
           </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Marauder" hidden="false" id="dacc-c1c8-68c8-a4bc">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6a97-f26d-96c5-0006-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6a97-f26d-96c5-0006-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="6a97-f26d-96c5-0006-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="3626-6c66-89a9-b83a" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="6a97-f26d-96c5-0006-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="unit" childId="3626-6c66-89a9-b83a" shared="true" childName="Reinforce"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -433,7 +463,7 @@
             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">PIERCE Armoured (2)</characteristic>
           </characteristics>
         </profile>
-        <profile name="2 Marauder" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ed00-4582-6d69-2031">
+        <profile name="Marauders" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="ed00-4582-6d69-2031">
           <characteristics>
             <characteristic name="Shd" typeId="4301-e83c-7226-741a"/>
             <characteristic name="Spd" typeId="1b39-d395-b125-7ea9">4/7</characteristic>
@@ -458,7 +488,7 @@
         <infoLink name="BUFF [Characteristic] (X)" id="2579-5409-ffdc-e30d" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Jim Raynor" hidden="false" id="bb87-11ec-f8a2-2390">
+    <selectionEntry type="model" import="true" name="Jim Raynor" hidden="false" id="bb87-11ec-f8a2-2390">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="250"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -575,7 +605,7 @@
         <infoLink name="REPETABLE" id="137a-8949-2c0f-6ec2" hidden="false" type="rule" targetId="f895-258a-9487-f59a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Goliath" hidden="false" id="7ed8-5f2b-5df9-4770">
+    <selectionEntry type="model" import="true" name="Goliath" hidden="false" id="7ed8-5f2b-5df9-4770">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="190"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -789,7 +819,7 @@
         <infoLink name="PINPOINT" id="46e5-c6ed-456d-854d" hidden="false" type="rule" targetId="f9ad-69a2-80e6-c3a5"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="3 Medics" hidden="false" id="f7d9-3214-ccc3-9f04">
+    <selectionEntry type="unit" import="true" name="Medics" hidden="false" id="f7d9-3214-ccc3-9f04">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="110"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -915,8 +945,16 @@
         <infoLink name="LONG RANGE (X&quot;)" id="6a28-4bab-9a40-647e" hidden="false" type="rule" targetId="a7d8-c669-4f19-2b97"/>
         <infoLink name="HEAL (X)" id="2f13-6c31-854e-9b45" hidden="false" type="rule" targetId="9499-b51b-c280-c0bf"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Medic" hidden="false" id="5adc-3c24-628d-bb56">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0cbb-435d-e9ad-6a26-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0cbb-435d-e9ad-6a26-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Point Defense Drone" hidden="true" id="ff3f-4fb0-21cd-6565">
+    <selectionEntry type="model" import="true" name="Point Defense Drone" hidden="true" id="ff3f-4fb0-21cd-6565">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
@@ -963,7 +1001,7 @@
         <infoLink name="DISPLACEMENT" id="bd28-f3ce-89f2-6fc9" hidden="false" type="rule" targetId="eb27-1500-88ca-d0f0"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="6 Raynor&apos;s Raiders" hidden="true" id="2f91-0a90-4a5c-444c">
+    <selectionEntry type="unit" import="true" name="Raynor&apos;s Raiders" hidden="true" id="2f91-0a90-4a5c-444c">
       <costs>
         <cost name="Minerals" typeId="5bcf-897a-a5c9-d0e8" value="230"/>
         <cost name="Gas" typeId="1719-6214-392e-e53f" value="0"/>
@@ -1017,6 +1055,14 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Raynor&apos;s Raider" hidden="false" id="b6cc-ee05-1a77-fb3c">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="74b7-cb28-5de4-c30f-min" includeChildSelections="false" automatic="true"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="74b7-cb28-5de4-c30f-max" includeChildSelections="false" automatic="true"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armory" hidden="false" id="db3d-2866-94ce-6ed4">
       <costs>
