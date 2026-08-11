@@ -1,5 +1,4 @@
-# Starcraft: The Miniature Game 
-New Recruit Data
+# Starcraft: The Miniature Game - New Recruit Data
 ![Status](https://img.shields.io/badge/status-actively%20maintained-brightgreen)
 [![Open Issues](https://img.shields.io/github/issues/loicmusy/starcraftTMG-NR)](https://github.com/<org>/<repo>/issues)
 [![Latest Release](https://img.shields.io/github/v/release/loicmusy/starcraftTMG-NR)](https://github.com/<org>/<repo>/releases)
