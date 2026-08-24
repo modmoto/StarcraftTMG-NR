@@ -121,7 +121,7 @@
                     <modifier type="set" value="30" field="5bcf-897a-a5c9-d0e8">
                       <comment>Reinforce Cost</comment>
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="6beb-c060-9e77-4256" shared="true" childName="Reinforce"/>
                       </conditions>
                     </modifier>
                   </modifiers>
