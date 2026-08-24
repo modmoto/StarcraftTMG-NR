@@ -6,7 +6,6 @@
         <categoryLink name="Faction" hidden="false" id="63e3-cacd-afb5-3893" targetId="e4d8-c158-a9fd-08ba"/>
         <categoryLink name="Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
         <categoryLink name="Deployment Maps" hidden="false" id="ec57-26da-cf9c-b7c1" targetId="d90f-1f84-6e45-9b27"/>
-
         <categoryLink name="Mission Cards" hidden="false" id="45d9-cd06-a54f-ca79" targetId="81f8-9a71-68ed-7dc6"/>
         <categoryLink name="Core" hidden="false" id="828b-7d99-85b2-0a8d" targetId="3874-6187-bb5c-3ad3"/>
         <categoryLink name="Elite" hidden="false" id="088f-a2ec-7363-59df" targetId="72c0-1ca1-1869-32d2"/>
@@ -239,7 +238,7 @@
                     <cost name="Hero" typeId="7e61-585f-b715-85e0" value="0"/>
                   </costs>
                   <infoLinks>
-                    <infoLink name="Grenade - Frag" id="36ca-f288-da12-50e2" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
+                    <infoLink name="Grenades - Frag" id="36ca-f288-da12-50e2" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9c8-a5aa-87fd-f126"/>
@@ -671,13 +670,13 @@
                         <profile name="Scatter Missiles" typeId="e8b6-5b29-e80c-a3b3" typeName="Assault Weapon" hidden="false" id="e3a6-04a4-abf9-97e6">
                           <characteristics>
                             <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">18&quot;</characteristic>
+                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
                             <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
                             <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">5+</characteristic>
                             <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
                             <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
                             <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
                             <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">INDIRECT FIRE, LOCKED IN (6), LONG RANGE (24&quot;), SIDEARM</characteristic>
-                            <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">Ground</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -1024,7 +1023,7 @@
         <infoLink name="BUFF [Characteristic] (X)" id="bf17-ff55-9330-9c63" hidden="false" type="rule" targetId="db39-98a1-2d62-0e5c"/>
         <infoLink name="Stimpack" id="d11a-cc3f-8ce2-ca92" hidden="false" type="profile" targetId="cedc-b9f6-3d53-5ae3"/>
         <infoLink name="Slugthrower" id="e85f-5996-4965-00f1" hidden="false" type="profile" targetId="7c6b-c406-4107-6bc4"/>
-        <infoLink name="Grenade - Frag" id="279b-fc9c-a023-8674" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
+        <infoLink name="Grenades - Frag" id="279b-fc9c-a023-8674" hidden="false" type="profile" targetId="73e3-df9f-4cf5-d51b"/>
         <infoLink name="Bayonet" id="7500-ddde-0d9b-8c93" hidden="false" type="profile" targetId="140c-a208-86f3-cf96"/>
         <infoLink name="NON-LETHAL DAMAGE (X)" id="6a29-d5f8-008d-99af" hidden="false" type="rule" targetId="0ecb-de24-de57-9c58"/>
         <infoLink name="PRECISION (X)" id="c557-7d91-f7c0-38e1" hidden="false" type="rule" targetId="d05b-cebb-50d1-ad49"/>
@@ -1428,16 +1427,16 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink import="true" name="ABANDONED CAMP" hidden="false" id="dmap-link-0001" type="selectionEntry" targetId="7d52-0151-6890-efad"/>
-    <entryLink import="true" name="ACROPOLIS" hidden="false" id="dmap-link-0002" type="selectionEntry" targetId="8867-f408-820f-61a1"/>
-    <entryLink import="true" name="AGRIA VALLEY" hidden="false" id="dmap-link-0003" type="selectionEntry" targetId="9bbc-dd07-b172-7b3a"/>
-    <entryLink import="true" name="BREACH" hidden="false" id="dmap-link-0004" type="selectionEntry" targetId="0d04-f286-bc47-8bec"/>
-    <entryLink import="true" name="CHAR PLAINS" hidden="false" id="dmap-link-0005" type="selectionEntry" targetId="9710-c30a-2bb5-708a"/>
-    <entryLink import="true" name="DIRT SIDE" hidden="false" id="dmap-link-0006" type="selectionEntry" targetId="3764-12ae-20ed-7a78"/>
-    <entryLink import="true" name="FRONTIER" hidden="false" id="dmap-link-0007" type="selectionEntry" targetId="d45e-a494-4545-719c"/>
-    <entryLink import="true" name="GAUNTLET" hidden="false" id="dmap-link-0008" type="selectionEntry" targetId="574e-cf38-3a94-283c"/>
-    <entryLink import="true" name="PROVING GROUNDS" hidden="false" id="dmap-link-0009" type="selectionEntry" targetId="c6cb-bff3-9ca9-a43c"/>
-    <entryLink import="true" name="TYPHOON" hidden="false" id="dmap-link-0010" type="selectionEntry" targetId="8488-c350-b0f9-3e67"/>
+    <entryLink import="true" name="Abandoned Camp" hidden="false" id="dmap-link-0001" type="selectionEntry" targetId="7d52-0151-6890-efad"/>
+    <entryLink import="true" name="Acropolis" hidden="false" id="dmap-link-0002" type="selectionEntry" targetId="8867-f408-820f-61a1"/>
+    <entryLink import="true" name="Agria Valley" hidden="false" id="dmap-link-0003" type="selectionEntry" targetId="9bbc-dd07-b172-7b3a"/>
+    <entryLink import="true" name="Breach" hidden="false" id="dmap-link-0004" type="selectionEntry" targetId="0d04-f286-bc47-8bec"/>
+    <entryLink import="true" name="Char Plains" hidden="false" id="dmap-link-0005" type="selectionEntry" targetId="9710-c30a-2bb5-708a"/>
+    <entryLink import="true" name="Dirt Side" hidden="false" id="dmap-link-0006" type="selectionEntry" targetId="3764-12ae-20ed-7a78"/>
+    <entryLink import="true" name="Frontier" hidden="false" id="dmap-link-0007" type="selectionEntry" targetId="d45e-a494-4545-719c"/>
+    <entryLink import="true" name="Gauntlet" hidden="false" id="dmap-link-0008" type="selectionEntry" targetId="574e-cf38-3a94-283c"/>
+    <entryLink import="true" name="Proving Grounds" hidden="false" id="dmap-link-0009" type="selectionEntry" targetId="c6cb-bff3-9ca9-a43c"/>
+    <entryLink import="true" name="Typhoon" hidden="false" id="dmap-link-0010" type="selectionEntry" targetId="8488-c350-b0f9-3e67"/>
     <entryLink import="true" name="Divide and Conquer" hidden="false" id="1760-5cb0-0516-7851" type="selectionEntry" targetId="867c-9d4b-143d-eca1"/>
     <entryLink import="true" name="Divide and Conquer" hidden="false" id="1c6e-9eb8-c2c3-4a32" type="selectionEntry" targetId="4bb0-33b7-8631-a7d6"/>
     <entryLink import="true" name="Frontlines" hidden="false" id="7a87-596b-6a14-6838" type="selectionEntry" targetId="0bea-4ed7-720a-e4c3"/>

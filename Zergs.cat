@@ -12,7 +12,6 @@
         <categoryLink name="Creep" hidden="false" id="7250-0862-0adc-72fe" targetId="33f8-3892-abc6-952c"/>
         <categoryLink name="Tactical" hidden="false" id="7f70-f2b6-02ef-722e" targetId="6042-132c-4895-cde4"/>
         <categoryLink name="Deployment Maps" hidden="false" id="ec57-26da-cf9c-b7c1" targetId="d90f-1f84-6e45-9b27"/>
-
         <categoryLink name="Mission Cards" hidden="false" id="102d-ac5a-b948-9438" targetId="81f8-9a71-68ed-7dc6"/>
         <categoryLink name="Core" hidden="false" id="587a-9104-151c-acbc" targetId="485c-e8a3-ec4d-88a3"/>
         <categoryLink name="Elite" hidden="false" id="3118-f961-70e0-6de2" targetId="1239-f2f6-df3a-784b"/>
@@ -237,16 +236,16 @@
                 <entryLink import="true" name="Burrow Ambush" hidden="false" id="2816-8836-f626-b053" type="selectionEntry" targetId="95a5-7e95-ec19-e358"/>
                 <entryLink import="true" name="Glial Reconstitution" hidden="false" id="c3c6-e7de-0c1c-e1e4" type="selectionEntry" targetId="e881-fb11-ba5c-62e6"/>
                 <entryLink import="true" name="Divide and Conquer" hidden="false" id="b015-d2ed-7fac-24fd" type="selectionEntry" targetId="867c-9d4b-143d-eca1"/>
-    <entryLink import="true" name="Divide and Conquer" hidden="false" id="0141-3e90-7c6a-32cb" type="selectionEntry" targetId="4bb0-33b7-8631-a7d6"/>
-    <entryLink import="true" name="Frontlines" hidden="false" id="07a6-7c81-81c2-d07d" type="selectionEntry" targetId="0bea-4ed7-720a-e4c3"/>
-    <entryLink import="true" name="Frontlines" hidden="false" id="ab09-7082-9bc6-d169" type="selectionEntry" targetId="ed0b-9c9c-e1d7-af7e"/>
-    <entryLink import="true" name="Gather the Resources" hidden="false" id="46bb-3cf2-fe58-de20" type="selectionEntry" targetId="9448-133e-5048-c69c"/>
-    <entryLink import="true" name="Gather the Resources" hidden="false" id="f645-4e82-fc44-6ea1" type="selectionEntry" targetId="9462-75bd-3874-4107"/>
-    <entryLink import="true" name="Hold Position" hidden="false" id="2521-efa6-fe69-5ded" type="selectionEntry" targetId="8d8b-9f4b-1186-51b7"/>
-    <entryLink import="true" name="Hold Position" hidden="false" id="4533-a8b5-e857-c004" type="selectionEntry" targetId="782c-42a3-2e29-105b"/>
-    <entryLink import="true" name="Supply Drop" hidden="false" id="c8f8-c7da-ff60-b0dc" type="selectionEntry" targetId="c0bd-6ca6-4efb-5f19"/>
-    <entryLink import="true" name="Supply Drop" hidden="false" id="f41a-ebf9-9344-8fc8" type="selectionEntry" targetId="6f6a-bca3-b232-6236"/>
-  </entryLinks>
+                <entryLink import="true" name="Divide and Conquer" hidden="false" id="0141-3e90-7c6a-32cb" type="selectionEntry" targetId="4bb0-33b7-8631-a7d6"/>
+                <entryLink import="true" name="Frontlines" hidden="false" id="07a6-7c81-81c2-d07d" type="selectionEntry" targetId="0bea-4ed7-720a-e4c3"/>
+                <entryLink import="true" name="Frontlines" hidden="false" id="ab09-7082-9bc6-d169" type="selectionEntry" targetId="ed0b-9c9c-e1d7-af7e"/>
+                <entryLink import="true" name="Gather the Resources" hidden="false" id="46bb-3cf2-fe58-de20" type="selectionEntry" targetId="9448-133e-5048-c69c"/>
+                <entryLink import="true" name="Gather the Resources" hidden="false" id="f645-4e82-fc44-6ea1" type="selectionEntry" targetId="9462-75bd-3874-4107"/>
+                <entryLink import="true" name="Hold Position" hidden="false" id="2521-efa6-fe69-5ded" type="selectionEntry" targetId="8d8b-9f4b-1186-51b7"/>
+                <entryLink import="true" name="Hold Position" hidden="false" id="4533-a8b5-e857-c004" type="selectionEntry" targetId="782c-42a3-2e29-105b"/>
+                <entryLink import="true" name="Supply Drop" hidden="false" id="c8f8-c7da-ff60-b0dc" type="selectionEntry" targetId="c0bd-6ca6-4efb-5f19"/>
+                <entryLink import="true" name="Supply Drop" hidden="false" id="f41a-ebf9-9344-8fc8" type="selectionEntry" targetId="6f6a-bca3-b232-6236"/>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Phase" id="cbef-c52c-d929-5527" hidden="false">
               <entryLinks>
@@ -1228,7 +1227,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Creep Removal" id="2be6-651f-0fdc-c716" hidden="false" type="profile" targetId="dc56-7a7c-492a-7eb9"/>
-        <infoLink name="Living Glob Tissue" id="914d-46f7-dcd5-9bd3" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
+        <infoLink name="Living Glob of Tissue" id="914d-46f7-dcd5-9bd3" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
       </infoLinks>
       <profiles>
         <profile name="Speed on Creep" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="d6ca-4a3a-8eed-8cab">
@@ -1253,7 +1252,7 @@
       </costs>
       <infoLinks>
         <infoLink name="Creep Removal" id="27c8-6614-3e51-f267" hidden="false" type="profile" targetId="dc56-7a7c-492a-7eb9"/>
-        <infoLink name="Living Glob Tissue" id="62ac-4073-93b7-9e5c" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
+        <infoLink name="Living Glob of Tissue" id="62ac-4073-93b7-9e5c" hidden="false" type="profile" targetId="0e98-3f8d-2fc8-74f9"/>
       </infoLinks>
       <profiles>
         <profile name="Malevolent Matriarch" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="24e6-af43-3ea2-db09">
@@ -1732,16 +1731,16 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink import="true" name="ABANDONED CAMP" hidden="false" id="dmap-link-0001" type="selectionEntry" targetId="7d52-0151-6890-efad"/>
-    <entryLink import="true" name="ACROPOLIS" hidden="false" id="dmap-link-0002" type="selectionEntry" targetId="8867-f408-820f-61a1"/>
-    <entryLink import="true" name="AGRIA VALLEY" hidden="false" id="dmap-link-0003" type="selectionEntry" targetId="9bbc-dd07-b172-7b3a"/>
-    <entryLink import="true" name="BREACH" hidden="false" id="dmap-link-0004" type="selectionEntry" targetId="0d04-f286-bc47-8bec"/>
-    <entryLink import="true" name="CHAR PLAINS" hidden="false" id="dmap-link-0005" type="selectionEntry" targetId="9710-c30a-2bb5-708a"/>
-    <entryLink import="true" name="DIRT SIDE" hidden="false" id="dmap-link-0006" type="selectionEntry" targetId="3764-12ae-20ed-7a78"/>
-    <entryLink import="true" name="FRONTIER" hidden="false" id="dmap-link-0007" type="selectionEntry" targetId="d45e-a494-4545-719c"/>
-    <entryLink import="true" name="GAUNTLET" hidden="false" id="dmap-link-0008" type="selectionEntry" targetId="574e-cf38-3a94-283c"/>
-    <entryLink import="true" name="PROVING GROUNDS" hidden="false" id="dmap-link-0009" type="selectionEntry" targetId="c6cb-bff3-9ca9-a43c"/>
-    <entryLink import="true" name="TYPHOON" hidden="false" id="dmap-link-0010" type="selectionEntry" targetId="8488-c350-b0f9-3e67"/>
+    <entryLink import="true" name="Abandoned Camp" hidden="false" id="dmap-link-0001" type="selectionEntry" targetId="7d52-0151-6890-efad"/>
+    <entryLink import="true" name="Acropolis" hidden="false" id="dmap-link-0002" type="selectionEntry" targetId="8867-f408-820f-61a1"/>
+    <entryLink import="true" name="Agria Valley" hidden="false" id="dmap-link-0003" type="selectionEntry" targetId="9bbc-dd07-b172-7b3a"/>
+    <entryLink import="true" name="Breach" hidden="false" id="dmap-link-0004" type="selectionEntry" targetId="0d04-f286-bc47-8bec"/>
+    <entryLink import="true" name="Char Plains" hidden="false" id="dmap-link-0005" type="selectionEntry" targetId="9710-c30a-2bb5-708a"/>
+    <entryLink import="true" name="Dirt Side" hidden="false" id="dmap-link-0006" type="selectionEntry" targetId="3764-12ae-20ed-7a78"/>
+    <entryLink import="true" name="Frontier" hidden="false" id="dmap-link-0007" type="selectionEntry" targetId="d45e-a494-4545-719c"/>
+    <entryLink import="true" name="Gauntlet" hidden="false" id="dmap-link-0008" type="selectionEntry" targetId="574e-cf38-3a94-283c"/>
+    <entryLink import="true" name="Proving Grounds" hidden="false" id="dmap-link-0009" type="selectionEntry" targetId="c6cb-bff3-9ca9-a43c"/>
+    <entryLink import="true" name="Typhoon" hidden="false" id="dmap-link-0010" type="selectionEntry" targetId="8488-c350-b0f9-3e67"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Zerg Creep" typeId="a305-fb8b-8be3-f0fe" typeName="Rules (Any Phase)" hidden="false" id="ace7-328b-a155-9023">
