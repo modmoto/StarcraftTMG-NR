@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-ce49-e853-2fea-6af1" name="Starcraft The Miniature Game" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-ce49-e853-2fea-6af1" name="Starcraft The Miniature Game" battleScribeVersion="2.03" revision="11" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType name=" Minerals" id="5bcf-897a-a5c9-d0e8" defaultCostLimit="2000"/>
     <costType name="  Gas" id="1719-6214-392e-e53f" defaultCostLimit="200"/>
@@ -160,6 +160,17 @@
         <characteristicType name="Supply" id="ee88-5823-7de8-93c0"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Mission Card" id="fa2f-c1b9-95af-1670" hidden="false" kind="ability" sortIndex="5">
+      <characteristicTypes>
+        <characteristicType name="Format" id="e8de-be79-f9d9-5576"/>
+        <characteristicType name="Game Length" id="4640-3d7a-8dae-f311"/>
+        <characteristicType name="Supply" id="7ed0-b17e-2d84-faec"/>
+        <characteristicType name="Per Round" id="9637-410b-3cce-2016"/>
+      
+        <characteristicType name="Parameters" id="bbb3-41fd-6c95-e9b2" kind="longText"/>
+        <characteristicType name="Scoring Conditions" id="42ab-2780-c1e3-28e5" kind="longText"/>
+        <characteristicType name="Additional Conditions" id="ec8b-1bf0-f2bf-fbbb" kind="longText"/></characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="IMPACT (X) Y" id="7805-5c0f-7d68-90c8" hidden="false">
@@ -286,7 +297,572 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
       <description>This Token, Marker or Ability Effect persists through Cleanup &amp; Refresh (overrides Part 8.9.5). It remains until a specific condition removes it (e.g. destroyed or duration expires).</description>
     </rule>
   </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="ABANDONED CAMP" hidden="false" id="7d52-0151-6890-efad">
+      <comment>Skirmish Deployment Map | Website ID: xxcLAuwGbNzHzggnAGLW | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a622-64f4-d058-b485"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm00-hide-mod">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm00-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="079a-b92c-c702-487b" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="ACROPOLIS" hidden="false" id="8867-f408-820f-61a1">
+      <comment>Standard Deployment Map | Website ID: cW3aQQikqXLZlFEPLa4j | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dcd7-a9d7-59a5-7bb6"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm01-hide-mod">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm01-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="bc50-404c-c9b5-4840" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="AGRIA VALLEY" hidden="false" id="9bbc-dd07-b172-7b3a">
+      <comment>Skirmish Deployment Map | Website ID: Kqz626cBnNVxqdBJePDC | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63ff-55cd-1646-1e03"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm02-hide-mod">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm02-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="52bc-6c28-86d8-4930" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BREACH" hidden="false" id="0d04-f286-bc47-8bec">
+      <comment>Standard Deployment Map | Website ID: E2Sv30MQfeLbO6Yqgx0l | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c08-8109-35c0-1d4c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm03-hide-mod">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm03-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="ba62-d51c-ccd2-4e84" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="CHAR PLAINS" hidden="false" id="9710-c30a-2bb5-708a">
+      <comment>Skirmish Deployment Map | Website ID: a7Ax3InF4uueg3gZ308P | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd4a-98ec-3216-44b9"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm04-hide-mod">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm04-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="ead4-cb41-1b10-4133" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="DIRT SIDE" hidden="false" id="3764-12ae-20ed-7a78">
+      <comment>Skirmish Deployment Map | Website ID: yQ2mHJMUvEaupcdRVwjm | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00f7-a2ae-cad7-667d"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm05-hide-mod">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm05-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="aa23-8660-0f36-471c" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="FRONTIER" hidden="false" id="d45e-a494-4545-719c">
+      <comment>Skirmish Deployment Map | Website ID: BM1fW5aRzwYA8aKrXd6L | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ac8-234d-4343-3a96"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm06-hide-mod">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm06-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="bee2-6596-62d8-424b" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="GAUNTLET" hidden="false" id="574e-cf38-3a94-283c">
+      <comment>Standard Deployment Map | Website ID: 2NdngLtIeZAprsWr25hM | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed37-1292-4b95-4f75"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm07-hide-mod">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm07-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="b8c1-2c0c-c5bb-4fe6" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PROVING GROUNDS" hidden="false" id="c6cb-bff3-9ca9-a43c">
+      <comment>Standard Deployment Map | Website ID: BRp1aN4Ebvu3Wuc8afJj | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9668-8ac0-ce07-b426"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm08-hide-mod">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm08-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="eebb-bba4-4f6c-46d3" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="TYPHOON" hidden="false" id="8488-c350-b0f9-3e67">
+      <comment>Standard Deployment Map | Website ID: Nwd5bN4pLjjol85hdyBU | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c331-0640-80b6-0c11"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="dm09-hide-mod">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="dm09-limit-cond"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="d90f-1f84-6e45-9b27" id="68aa-3750-06b8-4928" primary="true" name="Deployment Maps"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divide and Conquer" hidden="false" id="867c-9d4b-143d-eca1">
+      <comment>Standard Engagement Mission Card | Website ID: mission_divide_and_conquer | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42e5-f22a-2754-6d68"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="b474-7e47-89af-8c52">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="93b0-ccf3-2032-b2b8"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Divide and Conquer" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="c76d-ab1c-ca2b-96ae">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Standard Engagement</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">4</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">8</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">2 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.
+Split the battlefield into four Quarters as shown on the Deployment Card.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the First Round:
+Calculate the Total Current Supply in each battlefield Quarter.
+Gain 1 VP for each Quarter where your Total Current Supply is higher than the Opponent&#x27;s.
+Only Units Wholly Within a Quarter contribute their Supply to this check.
+If a Unit controls a Mission Marker, that Unit is worth 1 extra Supply for controlling Quarters.
+Gain 2 VP for Controlling Mission Marker 5.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 10+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="9a83-02ce-500a-c332" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Divide and Conquer" hidden="false" id="4bb0-33b7-8631-a7d6">
+      <comment>Skirmish Level Mission Card | Website ID: mission_divide_and_conquer__skirmish_ | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a7a-2cb4-2327-fe1c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="1f86-b0e8-e12f-3f38">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="ea9e-c1eb-63f6-98ed"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Divide and Conquer" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="571f-e41c-de1a-7c01">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Skirmish Level</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">4</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">4</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">1 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.
+Split the battlefield into four Quarters as shown on the Deployment Card.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the First Round:
+Calculate the Total Current Supply in each battlefield Quarter.
+Gain 1 VP for each Quarter where your Total Current Supply is higher than the Opponent&#x27;s.
+Only Units Wholly Within a Quarter contribute their Supply to this check.
+If a Unit controls a Mission Marker, that Unit is worth 1 extra Supply for controlling Quarters.
+Gain 2 VP for Controlling Mission Marker 5.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 8+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="6252-6c13-5ad1-d9c7" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frontlines" hidden="false" id="0bea-4ed7-720a-e4c3">
+      <comment>Standard Engagement Mission Card | Website ID: mission_frontlines | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b5-7ab4-d357-5fdf"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="60fd-7937-08ef-ac78">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="d2de-8be5-d177-cb24"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Frontlines" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="d15f-ba86-4218-bf5d">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Standard Engagement</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">6</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">2 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round:
+Gain 1 VP for each Controlled Mission Marker.
+Gain an additional 2 VPs for a Marker if you gained Control of it from the Opponent this Round.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 10+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="7f7e-1572-eb0d-6045" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Frontlines" hidden="false" id="ed0b-9c9c-e1d7-af7e">
+      <comment>Skirmish Level Mission Card | Website ID: mission_frontlines__skirmish_ | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d7-f643-1426-cbf7"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="0495-3a9a-5ea1-90ca">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="4951-ca7e-e4d3-7c16"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Frontlines" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="3e1a-1ca7-f91d-b67c">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Skirmish Level</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">3</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">1 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round:
+Gain 1 VP for each Controlled Mission Marker.
+Gain an additional 2 VPs for a Marker if you gained Control of it from the Opponent this Round.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 8+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="a796-57bb-1e02-d40e" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gather the Resources" hidden="false" id="9448-133e-5048-c69c">
+      <comment>Standard Engagement Mission Card | Website ID: mission_gather_the_resources | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dda-2f55-7377-6411"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="91a4-f7ba-4f27-72dd">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="31e0-2193-d6c8-3204"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gather the Resources" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="94d6-8e1f-dc85-6d13">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Standard Engagement</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">6</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">2 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round:
+Gain 2 VPs for each Controlled Mission Marker associated with the Opponent colour.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Assault Phase: If an Unengaged Unit is Within 3&quot; of a Controlled Neutral Mission Marker or associated with the Opponent, this unit may perform the Gather Action instead of a standard action.
+Gather Action:
+Gain 1 VP.
+Special Winning Conditions: The game ends immediately if a Player leads by 10+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="2477-d327-21e1-c7f8" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gather the Resources" hidden="false" id="9462-75bd-3874-4107">
+      <comment>Skirmish Level Mission Card | Website ID: mission_gather_the_resources__skirmish_ | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2332-68f3-e298-7953"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="cfc4-14d3-c044-05a2">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="f75a-b50f-7fd9-537d"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Gather the Resources" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="8f6e-a27f-c7c9-afe8">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Skirmish Level</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">3</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">1 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round:
+Gain 2 VPs for each Controlled Mission Marker associated with the Opponent colour.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Assault Phase: If an Unengaged Unit is Within 3&quot; of a Controlled Neutral Mission Marker or associated with the Opponent, this unit may perform the Gather Action instead of a standard action.
+Gather Action:
+Gain 1 VP.
+Special Winning Conditions: The game ends immediately if a Player leads by 10+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="83c5-5423-ada4-9757" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hold Position" hidden="false" id="8d8b-9f4b-1186-51b7">
+      <comment>Standard Engagement Mission Card | Website ID: mission_hold_position | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7db9-8531-9e88-c73c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="1529-7c6b-1d05-4306">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="5d50-aab4-313e-3ed4"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Hold Position" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="720a-48bc-6693-278f">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Standard Engagement</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">6</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">2 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round:
+Gain 1 VP for each Controlled Mission Marker that is Neutral or associated with your colour.
+Gain 2 VPs for each Controlled Mission Marker associated with the Opponent colour.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 10+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="f4ca-b325-eaf5-9529" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hold Position" hidden="false" id="782c-42a3-2e29-105b">
+      <comment>Skirmish Level Mission Card | Website ID: mission_hold_position__skirmish_ | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f30b-269f-53b5-01c0"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="6823-40af-673a-e770">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="2365-3e14-aa21-5efe"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Hold Position" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="6f70-6bc1-b435-d751">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Skirmish Level</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">3</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">1 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round:
+Gain 1 VP for each Controlled Mission Marker that is Neutral or associated with your colour.
+Gain 2 VPs for each Controlled Mission Marker associated with the Opponent colour.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 8+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="0135-054b-37d6-e1b5" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supply Drop" hidden="false" id="c0bd-6ca6-4efb-5f19">
+      <comment>Standard Engagement Mission Card | Website ID: mission_supply_drop | Visible when the roster Minerals limit is greater than 1000.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c35-798f-2ad3-ca5c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="aee4-36c0-6021-e03b">
+          <conditions>
+            <condition type="lessThan" value="1001" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="eb4f-bc97-052e-b1e6"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Supply Drop" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="b00f-29b6-7003-198b">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Standard Engagement</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">5</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">6</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">2 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Deactivated.
+Start of the Round (1-4): Randomly determine one Deactivated Mission Marker (1-4) and flip it to its Activated side.
+Start of Round 5: Mission Marker 5 is automatically Activated.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the first Round: For each activated Controlled Mission Marker, gain VPs equal to the Game Round number in which that Mission Marker was Activated and remove it.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 12+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="e176-1f7b-de57-37ac" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supply Drop" hidden="false" id="6f6a-bca3-b232-6236">
+      <comment>Skirmish Level Mission Card | Website ID: mission_supply_drop__skirmish_ | Visible when the roster Minerals limit is 1000 or less.</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbe1-c997-9386-710a"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden" id="e510-81c6-0055-3cdd">
+          <conditions>
+            <condition type="greaterThan" value="1000" field="limit::5bcf-897a-a5c9-d0e8" scope="roster" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" id="fd57-4aaf-5d1c-e2d4"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Supply Drop" typeId="fa2f-c1b9-95af-1670" typeName="Mission Card" hidden="false" id="898d-6496-3964-8c5f">
+
+          <characteristics>
+
+            <characteristic name="Format" typeId="e8de-be79-f9d9-5576">Skirmish Level</characteristic>
+
+            <characteristic name="Game Length" typeId="4640-3d7a-8dae-f311">4</characteristic>
+
+            <characteristic name="Supply" typeId="7ed0-b17e-2d84-faec">4</characteristic>
+
+            <characteristic name="Per Round" typeId="9637-410b-3cce-2016">1 per round</characteristic>
+              <characteristic name="Parameters" typeId="bbb3-41fd-6c95-e9b2">All Mission Markers are Deactivated.
+Start of the Round (2-4): Randomly determine one Deactivated Mission Marker (1,2,5) and flip it to its Activated side.</characteristic>
+              <characteristic name="Scoring Conditions" typeId="42ab-2780-c1e3-28e5">Score VPs equal to Enemy Supply destroyed this Round.
+From the Start of the Second Round: For each activated Controlled Mission Marker, gain VPs equal to the Game Round number in which that Mission Marker was Activated and remove it.</characteristic>
+              <characteristic name="Additional Conditions" typeId="ec8b-1bf0-f2bf-fbbb">Special Winning Conditions: The game ends immediately if a Player leads by 8+ VPs.</characteristic>
+            </characteristics>
+
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="81f8-9a71-68ed-7dc6" id="7076-23e9-4556-41be" primary="true" name="Mission Cards"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <categoryEntries>
+    <categoryEntry name="Deployment Maps" id="d90f-1f84-6e45-9b27" hidden="false">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="106f-4c2b-c3da-df01"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="625b-713d-d4aa-8f66"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry name="Mission Cards" id="81f8-9a71-68ed-7dc6" hidden="false">
+      <constraints>
+        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="270d-4ab3-61bd-1d55"/>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="346a-c141-4077-e1c8"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry name="Armoured" id="03d5-bf1b-74fa-ae6a" hidden="false"/>
     <categoryEntry name="Light" id="8312-ca6b-fa38-deef" hidden="false"/>
     <categoryEntry name="Ground" id="b947-4784-f388-d6a2" hidden="false"/>

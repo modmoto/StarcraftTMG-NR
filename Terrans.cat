@@ -5,6 +5,9 @@
       <categoryLinks>
         <categoryLink name="Faction" hidden="false" id="63e3-cacd-afb5-3893" targetId="e4d8-c158-a9fd-08ba"/>
         <categoryLink name="Tactical" hidden="false" id="68a8-1586-bd8c-9099" targetId="45a9-5def-355b-0560"/>
+        <categoryLink name="Deployment Maps" hidden="false" id="ec57-26da-cf9c-b7c1" targetId="d90f-1f84-6e45-9b27"/>
+
+        <categoryLink name="Mission Cards" hidden="false" id="45d9-cd06-a54f-ca79" targetId="81f8-9a71-68ed-7dc6"/>
         <categoryLink name="Core" hidden="false" id="828b-7d99-85b2-0a8d" targetId="3874-6187-bb5c-3ad3"/>
         <categoryLink name="Elite" hidden="false" id="088f-a2ec-7363-59df" targetId="72c0-1ca1-1869-32d2"/>
         <categoryLink name="Support" hidden="false" id="f9ab-270f-6d6c-0029" targetId="c453-061d-5a99-2d4f"/>
@@ -1424,6 +1427,28 @@
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="ABANDONED CAMP" hidden="false" id="dmap-link-0001" type="selectionEntry" targetId="7d52-0151-6890-efad"/>
+    <entryLink import="true" name="ACROPOLIS" hidden="false" id="dmap-link-0002" type="selectionEntry" targetId="8867-f408-820f-61a1"/>
+    <entryLink import="true" name="AGRIA VALLEY" hidden="false" id="dmap-link-0003" type="selectionEntry" targetId="9bbc-dd07-b172-7b3a"/>
+    <entryLink import="true" name="BREACH" hidden="false" id="dmap-link-0004" type="selectionEntry" targetId="0d04-f286-bc47-8bec"/>
+    <entryLink import="true" name="CHAR PLAINS" hidden="false" id="dmap-link-0005" type="selectionEntry" targetId="9710-c30a-2bb5-708a"/>
+    <entryLink import="true" name="DIRT SIDE" hidden="false" id="dmap-link-0006" type="selectionEntry" targetId="3764-12ae-20ed-7a78"/>
+    <entryLink import="true" name="FRONTIER" hidden="false" id="dmap-link-0007" type="selectionEntry" targetId="d45e-a494-4545-719c"/>
+    <entryLink import="true" name="GAUNTLET" hidden="false" id="dmap-link-0008" type="selectionEntry" targetId="574e-cf38-3a94-283c"/>
+    <entryLink import="true" name="PROVING GROUNDS" hidden="false" id="dmap-link-0009" type="selectionEntry" targetId="c6cb-bff3-9ca9-a43c"/>
+    <entryLink import="true" name="TYPHOON" hidden="false" id="dmap-link-0010" type="selectionEntry" targetId="8488-c350-b0f9-3e67"/>
+    <entryLink import="true" name="Divide and Conquer" hidden="false" id="1760-5cb0-0516-7851" type="selectionEntry" targetId="867c-9d4b-143d-eca1"/>
+    <entryLink import="true" name="Divide and Conquer" hidden="false" id="1c6e-9eb8-c2c3-4a32" type="selectionEntry" targetId="4bb0-33b7-8631-a7d6"/>
+    <entryLink import="true" name="Frontlines" hidden="false" id="7a87-596b-6a14-6838" type="selectionEntry" targetId="0bea-4ed7-720a-e4c3"/>
+    <entryLink import="true" name="Frontlines" hidden="false" id="8b3a-1c1d-5def-e441" type="selectionEntry" targetId="ed0b-9c9c-e1d7-af7e"/>
+    <entryLink import="true" name="Gather the Resources" hidden="false" id="3be2-3b9a-2bb2-8d19" type="selectionEntry" targetId="9448-133e-5048-c69c"/>
+    <entryLink import="true" name="Gather the Resources" hidden="false" id="e512-0776-db0d-f65d" type="selectionEntry" targetId="9462-75bd-3874-4107"/>
+    <entryLink import="true" name="Hold Position" hidden="false" id="3bf6-01de-d97b-3ccf" type="selectionEntry" targetId="8d8b-9f4b-1186-51b7"/>
+    <entryLink import="true" name="Hold Position" hidden="false" id="e84c-b2e4-c139-8d82" type="selectionEntry" targetId="782c-42a3-2e29-105b"/>
+    <entryLink import="true" name="Supply Drop" hidden="false" id="c6da-c023-14ec-2a42" type="selectionEntry" targetId="c0bd-6ca6-4efb-5f19"/>
+    <entryLink import="true" name="Supply Drop" hidden="false" id="d91f-fcd4-da85-bf13" type="selectionEntry" targetId="6f6a-bca3-b232-6236"/>
+  </entryLinks>
   <sharedProfiles>
     <profile name="Marine" typeId="18be-d8b9-8024-4925" typeName="Unit" hidden="false" id="74d2-7be5-c0fe-34ad">
       <characteristics>
