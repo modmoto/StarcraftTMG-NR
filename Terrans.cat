@@ -1463,12 +1463,12 @@
       <characteristics>
         <characteristic name="Rng" typeId="ebd0-74ec-d612-eac2">12&quot;</characteristic>
         <characteristic name="Tgt" typeId="ca62-f052-a905-5e3f">All</characteristic>
-        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">2</characteristic>
+        <characteristic name="RoA" typeId="6594-a81b-03da-75a1">6</characteristic>
         <characteristic name="Hit" typeId="f193-00c0-1dbe-ecba">3+</characteristic>
         <characteristic name="Surge" typeId="89cf-90ae-fc8c-167a">Light</characteristic>
-        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3</characteristic>
+        <characteristic name="S.Die" typeId="3779-8372-ef25-255d">D3+1</characteristic>
         <characteristic name="Dmg" typeId="a082-2247-4a81-d1e2">1</characteristic>
-        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e"/>
+        <characteristic name="Keyword" typeId="454d-a5c1-6c5e-8a4e">BURST FIRE 8&quot; (3)</characteristic>
       </characteristics>
     </profile>
     <profile name="Slugthrower" typeId="07ee-ef54-fbf7-5ca9" typeName="Rules (Assault Phase)" hidden="false" id="7c6b-c406-4107-6bc4">

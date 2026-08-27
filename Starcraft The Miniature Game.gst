@@ -302,6 +302,9 @@ If the Parent is not present on the battlefield, this Unit can be Activated norm
     <rule name="STAY IN PLAY" id="3a1b-37a2-e426-abca" hidden="false">
       <description>This Token, Marker or Ability Effect persists through Cleanup &amp; Refresh (overrides Part 8.9.5). It remains until a specific condition removes it (e.g. destroyed or duration expires).</description>
     </rule>
+    <rule name="BURST FIRE Y” (X)" id="3ec2-22f8-fa75-469b" hidden="false" page="When making a Ranged Attack against a target Within Y” of the attacking model, increase this weapon’s RoA by X for that attack.">
+      <alias>BURST FIRE</alias>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Abandoned Camp" hidden="false" id="7d52-0151-6890-efad">
