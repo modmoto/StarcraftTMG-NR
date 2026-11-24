@@ -1,0 +1,14 @@
+{
+  "name": "starcraft-tmg-nr",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "update:units:preview": "node update-official.mjs --mode=units",
+    "update:units:apply": "node update-official.mjs --mode=units --apply",
+    "test": "node --test update-official.test.mjs",
+    "update:rulebook:preview": "node update-official.mjs --mode=rulebook",
+    "update:rulebook:apply": "node update-official.mjs --mode=rulebook --apply"
+  }
+}

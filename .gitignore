@@ -18,3 +18,8 @@
 
 # Don't ignore .yml for CI build definitions
 !*.yml
+
+# Official data updater
+!/update-official.mjs
+!/update-official.test.mjs
+!/package.json
